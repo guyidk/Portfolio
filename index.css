@@ -42,7 +42,7 @@
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
-    --container-medium-width: 700px; 
+    --container-medium-width: 700px;
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
@@ -55,7 +55,8 @@
 }
 
 html {
-    font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+    font-size: 62.5%;
+    /* (16/10)*100 = 62.5% => 1rem = 10px */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -178,7 +179,7 @@ p {
 }
 
 @media(max-width: 900px) {
-    p { 
+    p {
         max-width: var(--container-small-width);
     }
 }
@@ -219,7 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid var(--pink);
     font-weight: 400;
 }
 
@@ -404,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
         url('./images/The_Ballistic_Research_Laboratory.png');
     height: 100vh;
     background-size: cover;
@@ -556,7 +557,7 @@ body:not(.user-is-tabbing) a:focus {
     .about__text {
         flex: 0 0 35%;
     }
-    
+
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
@@ -609,5 +610,93 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
-    } 
+    }
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal columns */
+    gap: 20px;
+    /* Adds space between columns */
+    padding-bottom: 200px;
+    list-style-type: disc;
+    /* Ensures the bullet points appear */
+}
+
+.skills-list li {
+    list-style-type: none;
+    /* Removes default bullet points */
+    margin-bottom: 10px;
+    /* Adds space between list items */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+}
+
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.modal img {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 100px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: #7e3dff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top:75px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #7e3dff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    margin-left: 10px;
+}
+
+.next {
+    right: 0;
+    margin-right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #dddddd30;
 }

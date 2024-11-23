@@ -20,11 +20,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/letter-r.png" />
 
   <!-- Put your site title here -->
   <title>
-    Rohith Parthipan | A Year 2 student currently pursuing a diploma in information and technology in Temasek Polytechnic
+    Rohith Parthipan | Portfolio
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -41,14 +41,10 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">My projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -69,93 +65,84 @@
 
     <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
+    <section class="projects" id="projects">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>My Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>BookTrack: Your Library, Perfectly Tracked</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                The app lets administrators manage the library’s collection, track book borrowings, and update book
+                details.
+                It includes automated testing for both backend and frontend, with data stored in MongoDB Atlas.
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
+                <li>HTML5</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>MongoDb Atlas</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/guyidk/BookTrack_DevOps_Project" class="link__text">
+                  Github Repo <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="work__image-box">
+              <img src="./images/BookTrack_demo.gif" alt="Project 1" />
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Mobile App Development with Flutter</h3>
+              <p>
+                I developed a mobile app using Adobe XD for design and Flutter/Dart for functionality, aimed at tracking
+                food inventory and expiration dates to reduce waste. It integrates Firebase for backend services and
+                offers
+                a user-friendly interface with list/calendar views, notifications, and purchase reminders, showcasing my
+                mobile development skills and commitment to minimizing food waste.
+              </p>
+              <ul class="work__list">
+                <li>Dart</li>
+                <li>Flutter</li>
+                <li>Firebase</li>
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                <a href="https://github.com/guyidk/Expiro_rohith" class="link__text">
+                  Github Repo <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/Expiro_Demo.gif" alt="Project 1" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Automated Testing with GitHub Actions and Jest</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Developed a robust automated testing pipeline using GitHub Actions and Jest, incorporating stubbing to
+                isolate dependencies and ensure accurate test results. This setup streamlined continuous integration,
+                providing efficient, reliable testing and enhancing overall code quality throughout the development
+                process.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Jest</li>
+                <li>GitHub</li>
               </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/Backend_Testing_Demo.gif" alt="Project 1" />
             </div>
           </div>
         </div>
@@ -164,17 +151,83 @@
 
     <!-- ***** Clients ***** -->
 
-    <section class="client" id="clients">
+    <section class="skills" id="skills">
       <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <h2>My Skills</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Education</h3>
+              <p>
+                I have consistently maintained strong academic performance with a CGPA of 3.78 while actively
+                participating
+                in co-curricular activities. As Vice President of the Information Technology Student Interest Group, I
+                have
+                honed my leadership and teamwork skills. Through workshops, events, and volunteering, I have developed a
+                well-rounded skill set and a proactive approach to learning and growth.
+              </p>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Grades.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3>Technical & Generic Skills</h3>
+              <p>
+                A summary of my technical expertise and soft skills developed through academic and hands-on experience.
+              </p>
+              <ul class="skills-list">
+                <li><strong>- Programming Languages:</strong> Python, JavaScript, Node.js, Dart, HTML, CSS</li>
+                <li><strong>- Mobile Development:</strong> Flutter</li>
+                <li><strong>- Web Development:</strong> Full Stack Development, AWS Cloud Services</li>
+                <li><strong>- Database Management:</strong> MySQL, MongoDB, Firebase</li>
+                <li><strong>- Cloud Computing:</strong> AWS Cloud Services (Lambda, S3, DynamoDB, SNS)</li>
+                <li><strong>- Cybersecurity:</strong> Application Security, OWASP Security Standards</li>
+                <li><strong>- UI/UX:</strong> Adobe XD</li>
+                <li><strong>- Tools & Platforms:</strong> GitHub, KNIME Analytics, Power BI, Agile Methodologies,
+                  Microsoft Office Suite (PowerPoint, Word, Excel)</li>
+                <li><strong>- Generic Skills:</strong> Communication (English/Tamil), Teamwork, Adaptability, Critical
+                  Thinking, Attention to Detail, Time Management</li>
+                <li><strong>- Collaboration:</strong> Proficient in using GitHub for teamwork, code reviews, and
+                  iterative development.</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Certifications</h3>
+              <p>
+                I have earned certifications in areas such as Full-Stack Python Development, Cloud Computing, and
+                Database
+                Management. These certifications demonstrate my ability to build and manage end-to-end solutions while
+                staying
+                updated with the latest industry standards.
+              </p>
+              <div class="work__links">
+                <a href="#" class="btn" id="viewCertifications">Explore Certifications</a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Certification.gif" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal" id="imageModal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="modalImage" src="./images/Certification.gif" alt="Certifications" />
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -188,10 +241,19 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              I am an enthusiastic Information Technology student at Temasek Polytechnic, graduating in May 2025 with a
+              strong
+              academic record (CGPA 3.76). With a solid foundation in application development, cybersecurity, cloud
+              computing,
+              and data analysis, I have honed my skills in full-stack web development, UI/UX design, and database
+              management.I
+              am passionate about solving complex problems and creating impactful digital solutions. My goal is to
+              contribute
+              to innovative projects that push the boundaries of technology while continuing to grow as a software
+              engineer.
+              Whether collaborating with a team or tackling challenges independently, I bring creativity, adaptability,
+              and a
+              commitment to excellence to every project I undertake.
             </p>
             <!-- Provide a link to your resume -->
             <a href="#" class="btn">My Resume</a>
@@ -199,7 +261,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/About_me.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -213,12 +275,10 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          I’m always excited to connect with like-minded individuals, professionals, and teams who share a passion for
+          technology and innovation. Whether you have a project idea, an internship opportunity, or just want to chat
+          about
+          the latest in tech, feel free to reach out!
         </p>
         <!-- Replace the email with yours -->
         <a href="mailto:Rohithkousi@gmail.com" class="btn">Rohithkousi@gmail.com</a>
@@ -233,23 +293,14 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/guyidk/" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/rohith-parthipan/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
           </a>
         </li>
       </ul>
@@ -257,7 +308,7 @@
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
   <script src="./index.js"></script>
 </body>
