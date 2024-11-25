@@ -84,3 +84,43 @@ window.addEventListener('click', (event) => {
   }
 });
 
+const viewgrades = document.getElementById('viewgrades');
+const modal_g = document.getElementById('imageModal_g');
+const modalImage_g = document.getElementById('modalImage_g');
+const closeModal_g = document.querySelector('.close_g');
+const nextBtn_g = document.querySelector('.next_g');
+const prevBtn_g = document.querySelector('.prev_g');
+
+const images_g = [ './images/CCA_records.png', './images/GPA_records.png' ]; // Array of image paths
+let currentIndex_g = 0;
+
+// Show modal on click
+viewgrades.addEventListener('click', (event) => {
+  event.preventDefault();
+  modal_g.style.display = 'block';
+  modalImage_g.src = images_g[currentIndex_g];
+});
+
+// Close modal
+closeModal_g.addEventListener('click', () => {
+  modal_g.style.display = 'none';
+});
+
+// Navigate next
+nextBtn_g.addEventListener('click', () => {
+  currentIndex_g = (currentIndex_g + 1) % images_g.length;
+  modalImage_g.src = images_g[currentIndex_g];
+});
+
+// Navigate previous
+prevBtn_g.addEventListener('click', () => {
+  currentIndex_g = (currentIndex_g - 1 + images_g.length) % images_g.length;
+  modalImage_g.src = images_g[currentIndex_g];
+});
+
+// Close modal when clicking outside the content
+window.addEventListener('click', (event) => {
+  if (event.target === modal_g) {
+    modal_g.style.display = 'none';
+  }
+});

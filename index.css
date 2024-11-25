@@ -700,3 +700,74 @@ body:not(.user-is-tabbing) a:focus {
 .next:hover {
     color: #dddddd30;
 }
+
+/* Modal Styles */
+.modal_g {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+}
+
+
+.modal-content_g {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.modal_g img {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 50px;
+}
+
+.close_g {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: #7e3dff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top:25px;
+}
+
+.prev_g,
+.next_g {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: #7e3dff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev_g {
+    left: 0;
+    margin-left: 10px;
+}
+
+.next_g {
+    right: 0;
+    margin-right: 10px;
+}
+
+.prev_g:hover,
+.next_g:hover {
+    color: #dddddd30;
+}
+
