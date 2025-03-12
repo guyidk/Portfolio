@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 40px;
+        }
+
+        .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #ff4081; /* Highlight color */
+}
+
+        .content {
+            height: 2000px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="nav__items">
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p>Scroll down to see the navbar stay in place!</p>
+    </div>
+
+</body>
+
+</html>
