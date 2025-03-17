@@ -124,3 +124,10 @@ window.addEventListener('click', (event) => {
     modal_g.style.display = 'none';
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hexagons = document.querySelectorAll(".hex");
+  hexagons.forEach((hex, index) => {
+      hex.style.animationDelay = `${index * 0.03}s`;
+  });
+});
